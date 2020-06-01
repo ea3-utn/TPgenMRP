@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Engineering Calculation Paper
+% LaTeX Template
+% Version 1.0 (20/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dmitry Volynkin (dim_voly@yahoo.com.au)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,spanish]{article} % Use A4 paper with a 12pt font size - different paper sizes will require manual recalculation of page margins and border positions
+
+\usepackage[spanish]{babel} % Idioma
+\selectlanguage{spanish}
+\usepackage{marginnote} % Required for margin notes
+\usepackage{wallpaper} % Required to set each page to have a background
+\usepackage{lastpage} % Required to print the total number of pages
+\usepackage[left=1.3cm,right=4.6cm,top=1.8cm,bottom=4.0cm,marginparwidth=3.4cm]{geometry} % Adjust page margins
+\usepackage{amsmath} % Required for equation customization
+\usepackage{amssymb} % Required to include mathematical symbols
+\usepackage{xcolor} % Required to specify colors by name
+\usepackage{physics} % Required to specify colors by name
+\usepackage{subcaption}
+\usepackage[demo]{graphicx}
+
+\newcommand{\MatrizN}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Matriz}[1]{\ensuremath{\left[{#1}\right]}}
+\newcommand{\VectorN}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Vector}[1]{\ensuremath{\left\{{#1}\right\}}}
+\newcommand{\dvar}[1]{\ensuremath{\delta{#1}}}
+\newcommand{\vol}{\ensuremath{\text{Vol}}}
+\newcommand{\dvol}{\ensuremath{\text{dVol}}}
+\newcommand{\area}{\ensuremath{\text{Area}}}
+\newcommand{\darea}{\ensuremath{\text{dArea}}}
+
+
+\usepackage{fancyhdr} % Required to customize headers
+\setlength{\headheight}{80pt} % Increase the size of the header to accommodate meta-information
+\pagestyle{fancy}\fancyhf{} % Use the custom header specified below
+\renewcommand{\headrulewidth}{0pt} % Remove the default horizontal rule under the header
+
+\setlength{\parindent}{0cm} % Remove paragraph indentation
+\newcommand{\tab}{\hspace*{2em}} % Defines a new command for some horizontal space
+\newcommand{\tabH}{\vspace*{2em}} % Defines a new command for some horizontal space
+
+\newcommand\BackgroundStructure{ % Command to specify the background of each page
+\setlength{\unitlength}{1mm} % Set the unit length to millimeters
+
+\setlength\fboxsep{0mm} % Adjusts the distance between the frameboxes and the borderlines
+\setlength\fboxrule{0.5mm} % Increase the thickness of the border line
+\put(10, 10){\fcolorbox{black}{green!10}{\framebox(192,247){}}} % Main content box
+% \put(165, 10){\fcolorbox{black}{blue!10}{\framebox(37,247){}}} % Margin box
+\put(10, 262){\fcolorbox{black}{white!10}{\framebox(192, 25){}}} % Header box
+% \put(100, 262){\includegraphics[width=102mm,keepaspectratio]{./imagenes/logo}} % Logo box - maximum height/width:
+\put(111, 264){\includegraphics[width=85mm,keepaspectratio]{./imagenes/logo}} % Logo box - maximum height/width: 
+}
+
+%----------------------------------------------------------------------------------------
+%	HEADER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\fancyhead[L]{\begin{tabular}{l r} % The header is a table with 4 columns
+% \thepage/\pageref{LastPage} \\ % Project name and page count
+\textbf{ESTRUCTURAS AERONAUTICAS III} \\
+\textbf{Trabajo pr\'actico gu\'ia} \\
+\textbf{M\'etodo de los residuos ponderados} \\
+\textbf{ALUMNO} \\
+\end{tabular}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\bibliographystyle{plain}
+
+\AddToShipoutPicture{\BackgroundStructure} % Set the background of each page to that specified above in the header information section
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\section{Requerimientos generales}
+
+Presentar un \textbf{informe} donde se escriba para cada enunciado:
+
+\begin{enumerate}
+\item Las funciones propuestas 
+\item El operador diferencial
+\item El gr\'afico de resultados y/o de comparaci\'on de curvas
+\item Respuesta a las preguntas del enunciado si corresponde.
+\item Un p\'arrafo realizando observaciones y conclusiones sobre la aplicaci\'on de los m\'etodos y los resultados obtenidos, puede estar incluido al final de la planilla.
+\end{enumerate}
+
+Adem\'as se requiere presentar todas las \textbf{planillas de c\'alculo} utilizadas para la resoluci\'on del trabajo pr\'actico.
+
+\section{Enunciado}
+Obtener las soluciones num\'ericas de la siguiente ecuaci\'on diferencial aplicando los 4 m\'etodos de residuos ponderados vistos en clase. Resolver para 1 y 2 constantes, con las condiciones de contorno en el intervalo indicado.
+
+\begin{equation}
+ECUACION
+\end{equation} \\
+
+\textbf{En el intervalo:} $INTERVALO$ \\
+
+\textbf{Condiciones de contorno:} $CONDICIONESDECONTORNO$ 
+\\ \\
+%% \begin{itemize}
+%% \item Presentar la planilla de c\'alculo utilizada 
+%% \item Presentar un resultado con valores num\'ericos 
+%% \item Presentar un gr\'afico comparador de las curvas resultantes de cada m\'etodo
+%% \end{itemize}
+
+\tabH
+

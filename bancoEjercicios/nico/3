@@ -1,0 +1,51 @@
+
+\section{Enunciado} 
+
+Se necesita conocer la distribuci\'on de la temperatura en la estructura del tanque de combustible alar de la figura entre los puntos \textbf{A} y \textbf{B}. \\
+
+La distribuci\'on de temperatura exterior al tanque se la puede modelar como $T_{e_{\left(x\right)}}$ (considerando el origen de coordenadas en \textbf{A} y direcci\'on hacia \textbf{B}). \\
+
+Resolver \'unicamente por el m\'etodo de \textbf{Colocaci\'on por puntos}. Utilizar un criterio de aproximaci\'on menor o igual a \textbf{$5$\%}. \\
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=0.50]{./imagenes/figura1.png}}
+\caption{Croquis del tanque combustible alar}
+\label{fg:figure1}
+\end{figure*}
+
+\tabH
+\tabH
+
+
+\subsection{Consideraciones}
+
+\begin{itemize}
+  \item La temperatura en el espesor del revestimiento es constante, ya que es muy delgado.\\
+  \item La temperatura en \textbf{A} y \textbf{B} se corresponden a la temperatura del combustible solidario a cada punto respectivamente. \\
+  \item El combustible tiene temperatura constante por su alta capacidad calor\'ifica. \\
+  \item No existe transmisi\'on de calor hacia el interior del compartimiento de separaci\'on entre los tanques.
+\end{itemize}
+
+\par\vspace{\baselineskip}
+
+\subsubsection{Datos}
+
+\begin{tabular}{|l||l|l|l|}
+\hline
+Variable & Descripci\'on & Valor & Unidad\\
+\hline
+$L$ & Separaci\'on entre tanques & 1 & $m$ \\
+$T_a$ & Temperatura JET-A1 solidario con \textbf{A} & 260 & $K$ \\
+$T_b$ & Temperatura JET-A1 solidario con \textbf{B} & 245 & $K$ \\
+$T_{e_{\left(x\right)}}$ & Distribuci\'on de temperatura exterior & $400-140\ x^2$ & $K$ \\
+$K_e$ & Conductividad de la estrutura & 100 & ${\frac{W}{K}}$ \\
+$h_e$ & Coeficiente de transf. de calor & 1600 & ${\frac{W}{K\ m^2}$ \\
+\hline
+\end{tabular}
+
+\par\vspace{\baselineskip}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

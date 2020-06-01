@@ -1,0 +1,47 @@
+
+\section{Enunciado} 
+
+El siguiente problema representa el caj\'on alar de una aeronave de peque\~no porte con ala tipo cantilever (Por ejemplo Cessna Cardinal o Centurion). La \'unica uni\'on con el resto de la aeronave es a trav\'es de un empotramiento ubicado en la ra\'iz de cada semiala , es decir que no permite desplazamientos ni giros en ese lugar.
+
+\begin{figure*}[htb]
+  \hspace*{-2.5cm}
+\centerline{\includegraphics[scale=0.45]{./imagenes/fotoMauri.jpg}}
+\label{fg:figure1}
+\end{figure*}
+
+La deformaci\'on del caj\'on viene dada por la siguiente ecuaci\'on diferencial:
+
+\begin{equation}
+\begin{equation}
+  \dv[2]{y}{x} \quad =F\ \left(x\ \frac{b}{2}-\frac{x^2}{2}\right)\ (\frac{1}{E\ I})
+\label{eq:eq1}
+\end{equation} \\ 
+
+\textbf{Con las condiciones:} $y_{\left(0\right)}=0,\ y^{'}_{\left(0\right)}=0$ \\
+
+%% D\'onde $F=12000$  \\
+%% D\'onde $F=-\frac{12000}{b^2}\ x^2+12000$  \\
+D\'onde $F=-\frac{12000}{b}\ x+12000$  \\
+
+La semienvergadura $b$  de la aeronave es de $7\ m$ \\
+
+El caj\'on alar es de secci\'on constante y se supone que va desde la ra\'iz hasta la puntera ($I=0.0007647\ m^4$). El material de construcci\'on Al 2020 T4. ($E= 73.1\ GPa$) \\ \\
+
+Con estos datos aproximar la ecuaci\'on diferencial a trav\'es del m\'etodo de Galerkin \textbf{hasta que la misma sea convergente}:
+\begin{itemize}
+\item ?`Qu\'e criterio de convergencia utiliz\'o (Ej: $\leq 1\%, \leq 3\%, \leq 5\%$)? ?`Por qu\'e?\footnote{Se sugiere comparar el \'area bajo la curva de la soluci\'on anal\'itica y la aproximada o tomar una serie de puntos en ambas curvas y comparar sus valores. Si encuentra o conoce otro m\'etodo es libre de utilizarlo. Cualquiera sea el caso debe justificar debidamente su respuesta.}
+\item Teniendo en cuenta la cantidad de polinomios de interpolaci\'on con la que obtuvo su respuesta. 
+?`Qu\'e ocurre si reduzco la cantidad? ?`Se mantiene el criterio de convergencia? 
+?`Qu\'e ocurre si incremento la cantidad? ?`Mejora la aproximaci\'on?
+\end{itemize}
+
+\begin{center}
+  \begin{figure*}[htb]
+    \centerline{\includegraphics[scale=0.15]{./imagenes/fotoMauri2.jpg}}
+    \label{fg:figure2}
+  \end{figure*}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
